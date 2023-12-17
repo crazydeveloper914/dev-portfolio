@@ -1,0 +1,48 @@
+@import './tailwind.scss';
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+// Fonts
+$michroma-font: 'Michroma', sans-serif;
+$roboto-font: 'Roboto', sans-serif;
+
+// Colors
+$primary-color: #04ab73;
+$secondary-color: #b6b6b6;
+$white-color: #ffffff;
+
+.main-title {
+  font-family: $michroma-font;
+  font-size: 60px;
+  color: $white-color;
+
+  span {
+    color: $primary-color;
+  }
+}
+
+.title {
+  font-family: $michroma-font;
+  color: $white-color;
+
+  .title-m {
+    font-size: 35px;
+  }
+
+  .title-s {
+    font-size: 25px;
+  }
+}
+
+.text {
+  font-family: $roboto-font;
+  color: $secondary-color;
+
+  .text-m {
+    font-size: 25px;
+  }
+
+  .text-s {
+    font-size: 20px;
+  }
+}
