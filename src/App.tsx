@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './components/Header';
 import Section from './components/Section';
 import { about, skills, experiences, posts } from './data/content';
+import SkillTagsList from './components/SkillTag/SkillTagsList';
+import ExperienceItemList from './components/ExperienceItem/ExpierenceItemList';
 
 const App: React.FC = () => {
   return (
@@ -9,10 +11,10 @@ const App: React.FC = () => {
       <div className="container mx-auto">
       <Header />
       <Section title="About">
-        <p className='text text-lg'>{about.text}</p>
+        <p className='text medium'>{about.text}</p>
       </Section>
       <Section title="Skillset">
-        {skills.map(skill => <span key={skill}>{skill}</span>)}
+        <SkillTagsList skills={skills} variant="green" />
       </Section>
       <Section title="Experience">
         {experiences.map((exp, index) => (

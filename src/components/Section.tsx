@@ -6,10 +6,10 @@ interface SectionProps {
 }
 
 const Section: React.FC<SectionProps> = ({ title, children }) => (
-  <div>
-    <h1 className='title text-xl'>{title}</h1>
+  <section className='py-6'>
+    <h1 className='title medium py-2'>{title}</h1>
     {children}
-  </div>
+  </section>
 );
 
 export default Section;
