@@ -24,9 +24,25 @@ $white-color: #ffffff;
 .title {
   font-family: $michroma-font;
   color: $white-color;
+
+  &.medium {
+    font-size: 25px;
+  }
+
+  &.small {
+    font-size: 20px;
+  }
 }
 
 .text {
   font-family: $roboto-font;
   color: $secondary-color;
+
+  &.medium {
+    font-size: 22px;
+  }
+
+  &.small {
+    font-size: 18px;
+  }
 }
