@@ -2,14 +2,14 @@ import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <div className="Header">
-      <header className="text-center p-4">
-        <h1 className="main-title mb-2">
+    
+      <header className="flex flex-col items-center justify-center h-screen">
+        <h1 className="main-title">
           Title <span>with span</span>
         </h1>
-        <p className="text text-2xl">Some text</p>
+        <p className="text medium">Some text</p>
       </header>
-    </div>
+  
   );
 }
 
