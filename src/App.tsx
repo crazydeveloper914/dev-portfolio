@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Section from './components/Section';
 import { about, skills, experiences, posts } from './data/content';
 import SkillTagsList from './components/SkillTag/SkillTagsList';
-import ExperienceItemList from './components/ExperienceItem/ExpierenceItemList';
+import ExperiencesList from './components/ExperienceItem/ExpierencesList';
 
 const App: React.FC = () => {
   return (
@@ -17,14 +17,7 @@ const App: React.FC = () => {
         <SkillTagsList skills={skills} variant="green" />
       </Section>
       <Section title="Experience">
-        {experiences.map((exp, index) => (
-          <div key={index}>
-            <h2>{exp.title}</h2>
-            <p>{exp.date}</p>
-            <p>{exp.text}</p>
-            {exp.skills.map(skill => <span key={skill}>{skill}</span>)}
-          </div>
-        ))}
+        <ExperiencesList experiences={experiences} />
       </Section>
       <Section title="My Blog Posts">
         {posts.map((post, index) => (

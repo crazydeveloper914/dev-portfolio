@@ -23,6 +23,7 @@ export const skills = [
 
 export const experiences = [
     {
+        id: 1,
         title: "Job Title 1",
         date: "Jan 2020 - Present",
         text: "Description of job 1",

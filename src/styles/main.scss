@@ -28,9 +28,8 @@ $white-color: #ffffff;
   &.medium {
     font-size: 25px;
   }
-
   &.small {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -38,11 +37,13 @@ $white-color: #ffffff;
   font-family: $roboto-font;
   color: $secondary-color;
 
+  span {
+    color: $primary-color;
+  }
   &.medium {
     font-size: 22px;
   }
-
   &.small {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
