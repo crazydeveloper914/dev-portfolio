@@ -14,7 +14,7 @@ $white-color: #ffffff;
 //Typography
 .main-title {
   font-family: $michroma-font;
-  font-size: 60px;
+  font-size: calc(2vw + 1.5rem);
   color: $white-color;
 
   span {
@@ -27,10 +27,11 @@ $white-color: #ffffff;
   color: $white-color;
 
   &.medium {
-    font-size: 25px;
+    font-size: calc(0.4vw + 1.1rem);
   }
+
   &.small {
-    font-size: 18px;
+    font-size: calc(0.3vw + 0.8rem);
   }
 }
 
@@ -41,10 +42,12 @@ $white-color: #ffffff;
   span {
     color: $primary-color;
   }
+
   &.medium {
-    font-size: 22px;
+    font-size: calc(0.3vw + 1.1rem);
   }
+
   &.small {
-    font-size: 17px;
+    font-size: calc(0.3vw + 0.9rem);
   }
 }

@@ -1,22 +1,21 @@
 @import '../../styles/main.scss';
 
 .skill-tag {
-    border-width: 1px;
-    border-style: solid;
-    padding: 5px 12px;
-    font-size: 18px;
-    display: inline-block;
-    margin-right: 8px;
-    margin-bottom: 8px;
-  
-    &.green {
-      border-color: $primary-color;
-      color: $primary-color;
-    }
-  
-    &.gray {
-      border-color: $secondary-color;
-      color: $secondary-color;
-    }
+  border-width: 1px;
+  border-style: solid;
+  padding: 4px 12px;
+  font-size: calc(0.3vw + 0.8rem);
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
+
+  &.green {
+    border-color: $primary-color;
+    color: $primary-color;
   }
-  
+
+  &.gray {
+    border-color: $secondary-color;
+    color: $secondary-color;
+  }
+}
