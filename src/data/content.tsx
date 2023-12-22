@@ -31,8 +31,18 @@ export const experiences = [
     },
 ];
 
+export const projects = [
+    {
+        id: 1,
+        title: "Blog Post 1",
+        description: "Summary of blog post 1",
+        imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
+    },
+];
+
 export const posts = [
     {
+        id: 1,
         title: "Blog Post 1",
         date: "Feb 2021",
         excerpt: "Summary of blog post 1",
