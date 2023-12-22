@@ -4,7 +4,7 @@ import SkillTag from "./SkillTag";
 interface SkillTagsListProps {
     skills: string[];
     variant: 'green' | 'gray';
-  }
+}
 
 const SkillTagsList: React.FC<SkillTagsListProps> = ({ skills, variant }) => {
     return (
