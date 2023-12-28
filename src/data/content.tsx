@@ -29,13 +29,39 @@ export const experiences = [
         text: "Description of job 1",
         skills: ['React', 'JavaScript'],
     },
+    {
+        id: 2,
+        title: "Job Title 2",
+        date: "Jan 2020 - Present",
+        text: "Description of job2",
+        skills: ['React', 'JavaScript'],
+    },
+    
 ];
 
 export const projects = [
     {
         id: 1,
-        title: "Blog Post 1",
-        description: "Summary of blog post 1",
+        title: "Project 1",
+        description: "Summary of project",
+        imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
+    },
+    {
+        id: 2,
+        title: "Project 2",
+        description: "Summary of project",
+        imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
+    },
+    {
+        id: 2,
+        title: "Project 2",
+        description: "Summary of project",
+        imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
+    },
+    {
+        id: 2,
+        title: "Project 2",
+        description: "Summary of project",
         imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
     },
 ];
@@ -46,5 +72,5 @@ export const posts = [
         title: "Blog Post 1",
         date: "Feb 2021",
         excerpt: "Summary of blog post 1",
-    },
+    }
 ];
