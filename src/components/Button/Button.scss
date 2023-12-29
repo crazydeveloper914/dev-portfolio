@@ -1,0 +1,28 @@
+@import '../../styles/main.scss';
+
+.btn {
+  color: $white-color;
+  border-radius: 0.2rem;
+  transition: all 0.2s ease-in-out;
+  font-family: $roboto-font;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 0.2rem 0.7rem;
+
+  &.btn-primary {
+    background-color: $primary-color;
+
+    &:hover {
+        background-color: $dark-green-color;
+      }
+  }
+    
+  &.btn-secondary {
+    background-color: $dark-gray-color;
+    border: 1px $gray-color solid;
+
+    &:hover {
+        background-color: $gray-color;
+      }
+  }
+}
