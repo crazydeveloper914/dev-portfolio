@@ -12,12 +12,12 @@ export interface ExperienceItemProps {
 const ExperienceItem: React.FC<ExperienceItemProps> = ({ date, title, text, skills }) => {
   return (
     <div className="experience-item flex pb-3">
-      <div className="date-box text small pe-10">
+      <div className="date-box text text-small pe-10">
         <span>{date}</span>
       </div>
       <div className="content-box">
-        <h3 className='title small'>{title}</h3>
-        <p className='text small pt-2 pb-4'>{text}</p>
+        <h3 className='title title-small'>{title}</h3>
+        <p className='text text-small pt-2 pb-4'>{text}</p>
         <SkillTagsList skills={skills} variant="gray" />
       </div>
     </div>

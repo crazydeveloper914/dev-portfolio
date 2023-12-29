@@ -7,7 +7,7 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ title, children }) => (
   <section className='py-6'>
-    <h1 className='title medium py-2'>{title}</h1>
+    <h1 className='title title-medium py-2'>{title}</h1>
     {children}
   </section>
 );

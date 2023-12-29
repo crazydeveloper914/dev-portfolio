@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <div className="container mx-auto">
         <Header />
         <Section title="About">
-          <p className='text medium'>{about.text}</p>
+          <p className='text text-medium'>{about.text}</p>
         </Section>
         <Section title="Skillset">
           <SkillTagsList skills={skills} variant="green" />

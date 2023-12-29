@@ -10,7 +10,9 @@ $roboto-font: 'Roboto', sans-serif;
 $primary-color: #04ab73;
 $secondary-color: #b6b6b6;
 $white-color: #ffffff;
-$dark-gray-color: #000000;
+$dark-green-color:  #009664;
+$dark-gray-color: #252525;
+$gray-color: #363636;
 
 //Typography
 .main-title {
@@ -27,11 +29,11 @@ $dark-gray-color: #000000;
   font-family: $michroma-font;
   color: $white-color;
 
-  &.medium {
+  &.title-medium {
     font-size: calc(0.4vw + 1.1rem);
   }
 
-  &.small {
+  &.title-small {
     font-size: calc(0.3vw + 0.8rem);
   }
 }
@@ -44,11 +46,11 @@ $dark-gray-color: #000000;
     color: $primary-color;
   }
 
-  &.medium {
+  &.text-medium {
     font-size: calc(0.3vw + 1.1rem);
   }
 
-  &.small {
+  &.text-small {
     font-size: calc(0.3vw + 0.9rem);
   }
 }

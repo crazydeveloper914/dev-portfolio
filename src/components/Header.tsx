@@ -7,7 +7,7 @@ const Header: React.FC = () => {
       <h1 className="main-title">
         Title <span>with span</span>
       </h1>
-      <p className="text medium">Some text</p>
+      <p className="text text-medium">Some text</p>
     </header>
 
   );
