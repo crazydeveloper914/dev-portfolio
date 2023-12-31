@@ -5,6 +5,7 @@ import { about, skills, experiences, projects, posts } from './data/content';
 import SkillTagsList from './components/SkillTag/SkillTagsList';
 import ExperiencesList from './components/ExperienceItem/ExperiencesList';
 import ProjectsList from './components/ProjectItem/ProjectsList';
+import PostsList from './components/PostItem/PostsList';
 
 const App: React.FC = () => {
   return (
@@ -24,13 +25,7 @@ const App: React.FC = () => {
           <ProjectsList projects={projects}/>
         </Section>
         <Section title="My Blog Posts">
-          {posts.map(post => (
-            <div key={post.id}>
-              <h2>{post.title}</h2>
-              <p>{post.date}</p>
-              <p>{post.excerpt}</p>
-            </div>
-          ))}
+          <PostsList posts={posts} />
         </Section>
       </div>
     </div>
