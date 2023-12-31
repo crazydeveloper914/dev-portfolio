@@ -1,9 +1,14 @@
-.project-item {
-    position: relative;
-}
+.image-box {
+  position: relative;
 
-.btn-box {
+  .btn-box {
     position: absolute;
-    bottom: 70px;
-    left: 0;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+  }
 }
+  

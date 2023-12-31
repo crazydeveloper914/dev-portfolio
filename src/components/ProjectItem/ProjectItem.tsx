@@ -12,12 +12,14 @@ export interface ProjectItemProps {
 const ProjectItem: React.FC<ProjectItemProps> = ({ title, description, imageUrl }) => {
   return (
     <div className="project-item">
-      <img src={imageUrl} alt={title} />
-      <div className='btn-box flex justify-between'>
-        <Button variant='secondary'>Code</Button>
-        <Button>Demo</Button>
+      <div className='image-box'>
+        <img src={imageUrl} alt={title} />
+        <div className='btn-box flex'>
+          <Button variant='secondary'>Code</Button>
+          <Button>Demo</Button>
+        </div>
       </div>
-      <h2 className='title title-small'>{title}</h2>
+      <h2 className='title title-small pt-2'>{title}</h2>
       <p className='text text-small'>{description}</p>
     </div>
   );
