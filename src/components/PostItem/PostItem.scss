@@ -1,0 +1,12 @@
+@import '../../styles/main.scss';
+
+.post-item {
+  background-color: $dark-gray-color;
+  border: 1px $dark-gray-color solid;
+  border-radius: 5px;
+  padding: 20px;
+
+  &:hover {
+    border-color: $gray-color;
+  }
+}
