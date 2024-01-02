@@ -1,6 +1,10 @@
 .image-box {
   position: relative;
 
+  img {
+    border-radius: 5px;
+  }
+
   .btn-box {
     position: absolute;
     bottom: 10px;

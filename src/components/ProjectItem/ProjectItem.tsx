@@ -14,7 +14,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title, description, imageUrl 
     <div className="project-item">
       <div className='image-box'>
         <img src={imageUrl} alt={title} />
-        <div className='btn-box flex'>
+        <div className='btn-box'>
           <Button variant='secondary'>Code</Button>
           <Button>Demo</Button>
         </div>
