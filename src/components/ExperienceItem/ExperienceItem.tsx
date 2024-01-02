@@ -11,9 +11,9 @@ export interface ExperienceItemProps {
 
 const ExperienceItem: React.FC<ExperienceItemProps> = ({ date, title, text, skills }) => {
   return (
-    <div className="experience-item flex pb-3">
-      <div className="date-box text text-small pe-10">
-        <span>{date}</span>
+    <div className="experience-item md:flex pb-5">
+      <div className="date-box text text-small text-green pe-10 pb-2">
+        {date}
       </div>
       <div className="content-box">
         <h3 className='title title-small'>{title}</h3>
