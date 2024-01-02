@@ -10,11 +10,11 @@
   padding: 5px 14px;
 
   &.btn-primary {
-    background-color: $primary-color;
+    background-color: $dark-green-color;
 
     &:hover {
-        background-color: $dark-green-color;
-      }
+      background-color: $primary-color;
+    }
   }
     
   &.btn-secondary {
@@ -22,7 +22,7 @@
     border: 1px $gray-color solid;
 
     &:hover {
-        background-color: $gray-color;
-      }
+      background-color: $gray-color;
+    }
   }
 }
