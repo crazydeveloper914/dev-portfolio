@@ -72,5 +72,17 @@ export const posts = [
     title: "Blog Post 1",
     date: "Feb 2021",
     excerpt: "Summary of blog post 1",
+  },
+  {
+    id: 2,
+    title: "Blog Post 2",
+    date: "Feb 2021",
+    excerpt: "Summary of blog post 2",
+  },
+  {
+    id: 3,
+    title: "Blog Post 3",
+    date: "Feb 2021",
+    excerpt: "Summary of blog post 3",
   }
 ];
