@@ -53,13 +53,13 @@ export const projects = [
     imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
   },
   {
-    id: 2,
+    id: 3,
     title: "Project 2",
     description: "Summary of project",
     imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
   },
   {
-    id: 2,
+    id: 4,
     title: "Project 2",
     description: "Summary of project",
     imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
