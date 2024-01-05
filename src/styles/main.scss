@@ -50,6 +50,10 @@ $gray-color: #454545;
     font-size: calc(0.3vw + 0.9rem);
   }
 
+  &.text-extra-small {
+    font-size: calc(0.2vw + 0.8rem);
+  }
+
   &.text-green {
     color: $primary-color;
   }
