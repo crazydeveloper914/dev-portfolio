@@ -10,16 +10,16 @@ const Footer: React.FC = () => {
         © {new Date().getFullYear()} Ugne Adomaityte
       </div>
       <div className="footer-right text text-small space-x-4">
-        <a href="https://www.linkedin.com/in/ugne-adomaityte/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/ugne-adomaityte/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn Profile">
           <FontAwesomeIcon icon={faLinkedin} size="sm"/>
         </a>
-        <a href="https://github.com/ugnead" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/ugnead" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub Profile">
           <FontAwesomeIcon icon={faGithub} size="sm"/>
         </a>
-        <a href="https://substack.com/@ugneadomaityte" target="_blank" rel="noopener noreferrer">
+        <a href="https://ugneadomaityte.hashnode.dev" target="_blank" rel="noopener noreferrer" aria-label="Visit My Blog">
           <FontAwesomeIcon icon={faPen} size="xs"/>
         </a>
-        <a href="mailto:u.adomaityte98@gmail.com">
+        <a href="mailto:u.adomaityte98@gmail.com" aria-label="Send Email">
           <FontAwesomeIcon icon={faEnvelope} size="sm"/>
         </a>
       </div>
