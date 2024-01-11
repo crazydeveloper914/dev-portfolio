@@ -6,17 +6,19 @@ export interface PostItemProps {
   id: string;
   title: string;
   date: string;
-  excerpt: string;
+  brief: string;
   slug: string;
 }
 
-const PostItem: React.FC<PostItemProps> = ({ title, date, excerpt, slug }) => {
+const PostItem: React.FC<PostItemProps> = ({ title, date, brief, slug }) => {
   const postUrl = `https://ugneadomaityte.hashnode.dev//${slug}`;
 
   return (
     <a href={postUrl} className="post-item">
-      <h2 className="post-title title title-small">{title}</h2>
-      <p className="post-excerpt text text-small">{excerpt}</p>
+      <div>
+        <h2 className="post-title title title-small pb-2">{title}</h2>
+        <p className="post-excerpt text text-small truncate">{brief}</p>
+      </div>
       <div className='post-bottom-box flex justify-between pt-7'>
         <p className="post-date text text-small pt-1">{date}</p>
         <Button>Read</Button>

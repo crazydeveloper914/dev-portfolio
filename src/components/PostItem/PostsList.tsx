@@ -34,7 +34,7 @@ const PostsList: React.FC = () => {
           id: post._id,
           title: post.title,
           date: new Date(post.dateAdded).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }),
-          excerpt: post.brief,
+          brief: post.brief,
           slug: post.slug
         }));
         setPosts(extractedPosts);
