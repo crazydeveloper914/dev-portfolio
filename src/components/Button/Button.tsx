@@ -7,7 +7,7 @@ interface ButtonProps {
   onClick?: () => void;
   className?: string;
   variant?: 'primary' | 'secondary';
-  href?: string; // New prop for handling links
+  href?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({ children, onClick, className, variant = 'primary', href }) => {
