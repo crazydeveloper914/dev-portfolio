@@ -20,7 +20,7 @@ const PostsList: React.FC = () => {
                   title
                   brief
                   dateAdded
-                  url
+                  slug
                 }
               }
             }
@@ -35,7 +35,7 @@ const PostsList: React.FC = () => {
           title: post.title,
           date: new Date(post.dateAdded).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }),
           excerpt: post.brief,
-          url: post.url
+          slug: post.slug
         }));
         setPosts(extractedPosts);
       })
@@ -46,11 +46,8 @@ const PostsList: React.FC = () => {
     <div className="posts-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 pb-10">
       {posts.map(post => (
         <PostItem 
-          id={post.id} 
-          title={post.title}
-          date={post.date}
-          excerpt={post.excerpt}
-          url={post.url}
+          key={post.id}
+          {...post}
         />
       ))}
     </div>
