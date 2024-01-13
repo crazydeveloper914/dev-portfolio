@@ -1,24 +1,37 @@
-import { useState, useCallback } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { useState, useEffect, RefObject } from 'react';
 
-const useActiveSection = () => {
-  const [activeSection, setActiveSection] = useState('');
+interface SectionRef {
+  ref: RefObject<HTMLElement>;
+  id: string;
+}
 
-  const setupSectionObserver = useCallback((id: string, ref: React.RefObject<HTMLElement>) => {
-    const { inView } = useInView({
-      threshold: 0.25,
-      rootMargin: '-25% 0px -25% 0px',
-      triggerOnce: false
+const useActiveSection = (sectionRefs: SectionRef[]) => {
+  const [activeSection, setActiveSection] = useState<string>('');
+
+  useEffect(() => {
+    sectionRefs.forEach(({ ref, id }) => {
+      if (!ref.current) return;
+
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          setActiveSection(id);
+        }
+      }, {
+        threshold: 0.25,
+        rootMargin: '-50% 0px -50% 0px',
+      });
+
+      observer.observe(ref.current);
+
+      return () => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      };
     });
+  }, [sectionRefs]); // Dependency array ensures effect runs when sectionRefs change
 
-    if (inView) {
-      setActiveSection(id);
-    }
-
-    return ref;
-  }, []);
-
-  return { activeSection, setupSectionObserver };
+  return activeSection;
 };
 
 export default useActiveSection;
