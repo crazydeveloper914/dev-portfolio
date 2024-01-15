@@ -18,7 +18,7 @@ const useActiveSection = (sectionRefs: SectionRef[]) => {
         }
       }, {
         threshold: 0.25,
-        rootMargin: '-50% 0px -50% 0px',
+        rootMargin: '-35% 0px -35% 0px',
       });
 
       observer.observe(ref.current);
@@ -29,7 +29,7 @@ const useActiveSection = (sectionRefs: SectionRef[]) => {
         }
       };
     });
-  }, [sectionRefs]); // Dependency array ensures effect runs when sectionRefs change
+  }, [sectionRefs]);
 
   return activeSection;
 };
