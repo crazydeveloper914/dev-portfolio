@@ -1,0 +1,32 @@
+@import "../../styles/main.scss";
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .1em solid $white-color;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: 
+    typing 1.3s steps(8, end),
+    blink-caret 0.7s step-end infinite;
+    
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: $white-color; }
+    }
+}
+
+.delayedText {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1.5s forwards;
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+}

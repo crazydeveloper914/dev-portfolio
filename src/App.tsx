@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Navigation from './components/Navigation/Navigation';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import Section from './components/Section';
 import { about, skills, experiences, projects } from './data/content';
 import SkillTagsList from './components/SkillTag/SkillTagsList';
@@ -25,8 +25,6 @@ const App: React.FC = () => {
   ];
 
   const activeSection = useActiveSection(sectionRefs);
-
-  console.log("Active Section:", activeSection);
 
   return (
     <div className="bg-black min-h-screen">
