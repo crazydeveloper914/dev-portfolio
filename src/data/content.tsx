@@ -1,20 +1,22 @@
 export const about = {
-  text: "Here is some information about me..."
+  text: "I'm a Junior Full Stack Developer based in Lithuania. With a keen interest in both frontend and backend technologies, I thrive on crafting engaging websites and applications with a focus on a great user experience, and most importantly clean and efficient code practices."
 };
 
 export const skills = [
   'React',
   'TypeScript',
   'JavaScript',
-  'HTML',
   'CSS',
   'SASS',
   'Bootstrap',
   'Tailwind CSS',
   'Node.js',
+  'NestJs',
   'Express.js',
   'MongoDB',
   'Mongoose',
+  'SQL',
+  'PostgreSQL',
   'Git',
   'Netlify',
   'Figma',
@@ -24,19 +26,25 @@ export const skills = [
 export const experiences = [
   {
     id: 1,
-    title: "Job Title 1",
-    date: "Jan 2020 - Present",
-    text: "Description of job 1",
-    skills: ['React', 'JavaScript'],
+    companyAndPosition: "Full-stack Developer • UAB Ababa",
+    date: "Jun 2023 - Sep 2023",
+    text: "An internship where I worked on a web-based systems development.",
+    skills: ['React', 'TypeScript', 'SASS', 'Node.js', 'NestJs', 'PostgreSQL', 'Git', 'Scrum'],
   },
   {
     id: 2,
-    title: "Job Title 2",
-    date: "Jan 2020 - Present",
-    text: "Description of job2",
-    skills: ['React', 'JavaScript'],
+    companyAndPosition: "Student • TECHIN",
+    date: "Sep 2022 - Jun 2023",
+    text: "A 10-month intensive full-stack web development course.",
+    skills: ['React', 'JavaScript', 'CSS', 'Bootstrap', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'SQL', 'Git', 'Scrum', 'Agile'],
   },
-    
+  {
+    id: 3,
+    companyAndPosition: "Web Developer • Self-Employed",
+    date: "Nov 2021 - Sep 2022",
+    text: "Creating, optimizing and administering websites for clients.",
+    skills: ['Wordpress', 'WooCommerce', 'Elementor', 'PHP', 'CSS', 'Figma'],
+  },
 ];
 
 export const projects = [
@@ -54,35 +62,14 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Project 2",
+    title: "Project 3",
     description: "Summary of project",
     imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
   },
   {
     id: 4,
-    title: "Project 2",
+    title: "Project 4",
     description: "Summary of project",
     imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
   },
-];
-
-export const posts = [
-  {
-    id: 1,
-    title: "Blog Post 1",
-    date: "Feb 2021",
-    excerpt: "Summary of blog post 1",
-  },
-  {
-    id: 2,
-    title: "Blog Post 2",
-    date: "Feb 2021",
-    excerpt: "Summary of blog post 2",
-  },
-  {
-    id: 3,
-    title: "Blog Post 3",
-    date: "Feb 2021",
-    excerpt: "Summary of blog post 3",
-  }
 ];
