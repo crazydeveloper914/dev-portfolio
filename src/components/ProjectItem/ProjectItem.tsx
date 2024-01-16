@@ -3,7 +3,6 @@ import './ProjectItem.scss';
 import Button from '../Button/Button';
 
 export interface ProjectItemProps {
-  id: number;
   title: string;
   description: string;
   imageUrl: string;
