@@ -19,7 +19,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection }) => {
 
   return (
     <nav className="navigation">
-      <ul className="flex justify-center space-x-8 title title-small">
+      <ul className="flex justify-center space-x-2 sm:space-x-8 title title-small">
         <li className={`nav-item ${activeSection === 'header' ? 'active-nav-item' : ''}`} onClick={() => handleNavLinkClick('header')}>Home</li>
         <li className={`nav-item ${activeSection === 'about' ? 'active-nav-item' : ''}`} onClick={() => handleNavLinkClick('about')}>About</li>
         <li className={`nav-item ${activeSection === 'projects' ? 'active-nav-item' : ''}`} onClick={() => handleNavLinkClick('projects')}>Projects</li>

@@ -28,7 +28,7 @@ const App: React.FC = () => {
 
   return (
     <div className="bg-black min-h-screen">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-16">
         <Navigation activeSection={activeSection} />
         <Header id='header' ref={headerRef} />
         <div id='about' ref={aboutRef}>
