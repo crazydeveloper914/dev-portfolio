@@ -20,8 +20,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title, skills, imageUrl }) =>
         </div>
       </div>
       <h2 className='title title-small pt-2'>{title}</h2>
-      {/* <p className='text text-small'>{description}</p> */}
-      <SkillTagsList skills={skills} variant="gray" />
+      <SkillTagsList skills={skills} variant="simple" />
     </div>
   );
 };

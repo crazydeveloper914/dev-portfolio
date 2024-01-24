@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 interface SkillTagsListProps {
   skills: string[];
-  variant: 'green' | 'gray';
+  variant: 'green' | 'gray' | 'simple';
 }
 
 const SkillTagsList: React.FC<SkillTagsListProps> = ({ skills, variant }) => {

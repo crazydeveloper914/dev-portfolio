@@ -3,7 +3,7 @@ import './SkillTag.scss';
 
 interface SkillTagProps {
   skill: string;
-  variant: 'green' | 'gray';
+  variant: 'green' | 'gray' | 'simple';
 }
 
 const SkillTag: React.FC<SkillTagProps> = ({ skill, variant }) => {
