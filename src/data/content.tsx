@@ -53,23 +53,5 @@ export const projects = [
     title: "Movies App",
     skills: ['JavaScript', 'React', 'Node', 'Bootstrap', 'MongoDB', 'Mongoose'],
     imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
-  },
-  {
-    id: 2,
-    title: "Project 2",
-    skills: [],
-    imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
-  },
-  {
-    id: 3,
-    title: "Project 3",
-    skills: [],
-    imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
-  },
-  {
-    id: 4,
-    title: "Project 4",
-    skills: [],
-    imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
-  },
+  }
 ];
