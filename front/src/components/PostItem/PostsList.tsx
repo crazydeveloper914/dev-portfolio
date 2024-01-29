@@ -5,22 +5,24 @@ const PostsList: React.FC = () => {
   const [posts, setPosts] = useState<PostItemProps[]>([]);
 
   useEffect(() => {
-    fetch('https://api.hashnode.com/', {
+    fetch('http://localhost:5000/fetchPosts', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         query: `
           {
-            user(username: "ugnead") {
-              publication {
-                posts {
-                  _id
-                  title
-                  brief
-                  dateAdded
-                  slug
+            publication(host: "ugneadomaityte.hashnode.dev/") {
+              posts(first: 4) {
+                edges {
+                  node {
+                    id
+                    title
+                    brief
+                    publishedAt
+                    slug
+                  }
                 }
               }
             }
@@ -30,13 +32,16 @@ const PostsList: React.FC = () => {
     })
       .then(response => response.json())
       .then(data => {
-        const extractedPosts = data.data.user.publication.posts.map((post: any) => ({
-          id: post._id,
-          title: post.title,
-          date: new Date(post.dateAdded).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }),
-          brief: post.brief,
-          slug: post.slug
-        }));
+        const extractedPosts = data.data.publication.posts.edges.map((edge: any) => {
+          const post = edge.node;
+          return {
+            id: post.id,
+            title: post.title,
+            date: new Date(post.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }),
+            brief: post.brief,
+            slug: post.slug
+          };
+        });      
         setPosts(extractedPosts);
       })
       .catch(error => console.error('Error fetching Hashnode posts:', error));
@@ -55,3 +60,4 @@ const PostsList: React.FC = () => {
 };
 
 export default PostsList;
+
