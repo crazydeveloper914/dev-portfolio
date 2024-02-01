@@ -51,7 +51,8 @@ export const projects = [
   {
     id: 1,
     title: "Movies App",
-    skills: ['JavaScript', 'React', 'Node', 'Bootstrap', 'MongoDB', 'Mongoose'],
-    imageUrl: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'
+    skills: ['JavaScript', 'React', 'Node.js', 'Express.js', 'Bootstrap', 'MongoDB', 'Mongoose'],
+    image: 'movies-app-banner.png',
+    codeUrl: 'https://github.com/ugnead/movies-app'
   }
 ];

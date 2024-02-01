@@ -6,16 +6,17 @@ import SkillTagsList from '../SkillTag/SkillTagsList';
 export interface ProjectItemProps {
   title: string;
   skills: string[];
-  imageUrl: string;
+  image: string;
+  codeUrl: string;
 }
 
-const ProjectItem: React.FC<ProjectItemProps> = ({ title, skills, imageUrl }) => {
+const ProjectItem: React.FC<ProjectItemProps> = ({ title, skills, image, codeUrl }) => {
   return (
     <div className="project-item">
       <div className='image-box'>
-        <img src={imageUrl} alt={title} />
+        <img src={ `/images/` + image} alt={title} />
         <div className='btn-box'>
-          <Button variant='secondary'>Code</Button>
+          <Button href={codeUrl} variant='secondary'>Code</Button>
           <Button>Demo</Button>
         </div>
       </div>
