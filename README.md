@@ -1,7 +1,6 @@
 <h1>💻 Personal Portfolio Website</h1>
 
 <h2>🛠️ Technologies</h2>
-
 <ul>
   <li>
     <code>TypeScript</code>
